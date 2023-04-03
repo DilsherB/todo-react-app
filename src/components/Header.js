@@ -1,10 +1,15 @@
-const Header = () => {
+import styles from "@/styles/Header.module.css";
+const Header = (props) => {
+  const headerStyle = {
+    padding: "20px 0",
+    lineHeight: "1.5em",
+    color: "#aeadad",
+    textAlign: "center",
+  };
   return (
-      <header>
-        <h1>TODOs</h1>
-        <p>Items will persist in the local storage of your browser</p>
-      </header>
-    )
-}
-
+    <header style={headerStyle} className={styles.header}>
+      {props.children}
+    </header>
+  );
+};
 export default Header;
