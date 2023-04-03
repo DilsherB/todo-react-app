@@ -1,19 +1,14 @@
-import InputTodo from "./InputTodo";
-import TodosList from "./TodosList";
+import InputTodo from "@/components/InputTodo";
+import TodosList from "@/components/TodosList";
+
+import { TodosProvider } from "@/context/TodosContext";
 
 const TodosLogic = () => {
-  const todos = [
-    { id: 1, title: 'Create App "npx create-react-app [app-name]"', completed: true },
-    { id: 2, title: 'Identify components', completed: true },
-    { id: 3, title: 'Build the logic and display them', completed: false },
-    { id: 4, title: 'Deploy the project', completed: false }
-  ]
   return (
-    <div>
+    <TodosProvider>
       <InputTodo />
-      <TodosList todosProps={todos} />
-    </div>
-  )
-}
-
+      <TodosList />
+    </TodosProvider>
+  );
+};
 export default TodosLogic;
