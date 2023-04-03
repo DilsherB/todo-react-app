@@ -1,15 +1,9 @@
-import styles from "@/styles/Header.module.css";
 const Header = (props) => {
-  const headerStyle = {
-    padding: "20px 0",
-    lineHeight: "1.5em",
-    color: "#aeadad",
-    textAlign: "center",
-  };
   return (
-    <header style={headerStyle} className={styles.header}>
-      {props.children}
-    </header>
+    <div>
+      <h1>TODOs</h1>
+      <p>Manage your day to day tasks here...</p>
+    </div>
   );
 };
 export default Header;
