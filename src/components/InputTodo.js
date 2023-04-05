@@ -6,7 +6,7 @@ const InputTodo = () => {
     <>
       <form>
         <input type="text" placeholder="Add to do..." />
-        <button>
+        <button className="plusIcon">
           <FaPlusCircle />
         </button>
       </form>
