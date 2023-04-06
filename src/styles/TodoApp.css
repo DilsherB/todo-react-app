@@ -19,6 +19,7 @@ body,
   margin: 10px auto;
   padding: 1px 30px;
   border-radius: 5px;
+  width: 70%;
 }
 
 form {
@@ -33,8 +34,8 @@ input,
   padding: 5px;
 }
 
-input {
-  width: 40%;
+input[type="text"] {
+  width: 70%;
 }
 
 ul {
@@ -45,10 +46,36 @@ ul {
 
 li {
   list-style: none;
-  padding: 5px 8px;
   background-color: blueviolet;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
 }
 
 li:nth-child(odd) {
   background-color: aqua;
 }
+
+li:first-child {
+  border-radius: 5px 5px 0 0;
+}
+
+li:last-child {
+  border-radius: 0 0 5px 5px;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin: 0 10px;
+}
+
+#itemTitle {
+  width: 85%;
+}
+
+/* #editIcon {
+  padding: 0 5%;
+}
+#deleteIcon {
+  padding-right: 8px;
+} */
