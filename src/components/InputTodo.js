@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { FaPlusCircle } from "react-icons/fa";
 
 const InputTodo = () => {
