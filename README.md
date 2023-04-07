@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### [Live Demo]
 
-<a href="https://642ffd5c76311926d2a41a26--quiet-dolphin-eb98e6.netlify.app/" target="_blank">click to see live Demo</a>
+<a href="https://dilsher-react-to-do.netlify.app/" target="_blank">click to see live Demo</a>
