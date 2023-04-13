@@ -4,9 +4,7 @@ const TodoItem = ({ itemProp }) => {
   const handleCheckbox = () => {
     console.log("checked");
   };
-  const handleDelete = () => {
-    console.log("deleted");
-  };
+  const handleDelete = (id) => {};
   const handleEdit = () => {
     console.log("edited");
   };
