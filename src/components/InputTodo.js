@@ -1,11 +1,11 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { FaPlusCircle } from "react-icons/fa";
 
 const InputTodo = () => {
-  const [todo, setTodo] = useState("");
+  // const [todo, setTodo] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
-    setTodo(e.target.value);
+    console.log(e.target.value);
   };
 
   return (
