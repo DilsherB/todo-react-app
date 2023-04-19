@@ -12,32 +12,6 @@ body,
   margin: 0 auto;
 }
 
-.header {
-  text-align: center;
-  background-color: rgb(175, 105, 245);
-  width: fit-content;
-  margin: 10px auto;
-  padding: 1px 30px;
-  border-radius: 5px;
-  width: 70%;
-}
-
-form {
-  text-align: center;
-}
-
-input,
-.plusIcon {
-  height: 40px;
-  width: 35px;
-  align-self: baseline;
-  padding: 5px;
-}
-
-input[type="text"] {
-  width: 70%;
-}
-
 ul {
   border: 1px solid rgb(3, 67, 67);
   padding: 8px;
