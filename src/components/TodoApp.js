@@ -25,7 +25,7 @@ const TodoApp = () => {
     <div className="todoApp">
       <h1>React TODO App</h1>
       <InputTodo todo={todo} setTodo={setTodo} addTodo={addTodo} />
-      <TodoItem list={todos} remove={deleteTodo} edit={editTodo} />
+      <TodoItem list={todos} remove={deleteTodo} />
     </div>
   );
 };

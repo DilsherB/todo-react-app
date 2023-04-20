@@ -16,12 +16,7 @@ const TodoItem = ({ list, remove, edit }) => {
                       remove(entry);
                     }}
                   ></FaTrashAlt>
-                  <FaEdit
-                    className="editBtn"
-                    onClick={() => {
-                      edit(entry);
-                    }}
-                  />
+                  <FaEdit />
                 </span>
               </li>
             </div>
