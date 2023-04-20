@@ -1,3 +1,5 @@
+import { FaTrash, FaTrashAlt, FiEdit } from "react-icons/fa";
+
 const TodoItem = ({ list, remove }) => {
   return (
     <>
@@ -5,15 +7,17 @@ const TodoItem = ({ list, remove }) => {
         <ul className="todoList">
           {list.map((entry, index) => (
             <div className="todo">
-              <li key={index}>{entry}</li>
-              <button
-                className="deleteBtn"
-                onClick={() => {
-                  remove(entry);
-                }}
-              >
-                Delete
-              </button>
+              <li key={index}>
+                {entry}
+                <FaTrashAlt />
+                <FiEdit />
+                <FaTrash
+                  className="deleteBtn"
+                  onClick={() => {
+                    remove(entry);
+                  }}
+                ></FaTrash>
+              </li>
             </div>
           ))}
         </ul>
