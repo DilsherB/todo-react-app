@@ -1,38 +1,28 @@
-import { useState } from "react";
-import { FaEdit, FaTrash } from "react-icons/fa";
-
-const TodoItem = ({ itemProp }) => {
-  const [todos, setTodos] = useState([]);
-  // const [todo, setTodo] = useState("");
-  const handleCheckbox = () => {
-    console.log("checked");
-  };
-  const handleDelete = (id) => {
-    const newTodos = todos.filter((todo) => {
-      return todo !== id;
-    });
-    setTodos(newTodos);
-  };
-  const handleEdit = () => {
-    console.log("edited");
-  };
+const TodoItem = ({ list, remove }) => {
   return (
-    <li>
-      <input type="checkbox" onClick={handleCheckbox}></input>
-      <div id="itemTitle">{itemProp.title}</div>
-      <FaEdit
-        className="editIcon"
-        style={{ margin: "0 2%" }}
-        size="20px"
-        onClick={handleEdit}
-      />
-      <FaTrash
-        className="deleteIcon"
-        style={{ margin: "0 2%" }}
-        color="red"
-        onClick={handleDelete}
-      />
-    </li>
+    <>
+      {list?.length > 0 ? (
+        <ul className="todoList">
+          {list.map((entry, index) => (
+            <div className="todo">
+              <li key={index}>{entry}</li>
+              <button
+                className="deleteBtn"
+                onClick={() => {
+                  remove(entry);
+                }}
+              >
+                Delete
+              </button>
+            </div>
+          ))}
+        </ul>
+      ) : (
+        <div className="empty">
+          <p>No tasks found</p>
+        </div>
+      )}
+    </>
   );
 };
 
