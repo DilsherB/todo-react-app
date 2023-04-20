@@ -6,6 +6,7 @@ import TodoItem from "./TodoItem";
 const TodoApp = () => {
   const [todos, setTodos] = useState([]);
   const [todo, setTodo] = useState("");
+  // const [edit, setEdit] = useState(false);
 
   const addTodo = () => {
     if (todo !== "") {
@@ -20,11 +21,13 @@ const TodoApp = () => {
     });
     setTodos(newTodos);
   };
+
+  const editTodo = (id) => {};
   return (
     <div className="todoApp">
       <h1>React TODO App</h1>
       <InputTodo todo={todo} setTodo={setTodo} addTodo={addTodo} />
-      <TodoItem list={todos} remove={deleteTodo} />
+      <TodoItem list={todos} remove={deleteTodo} edit={editTodo} />
     </div>
   );
 };
