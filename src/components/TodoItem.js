@@ -1,4 +1,4 @@
-import { FaTrash, FaTrashAlt, FiEdit } from "react-icons/fa";
+import { FaTrash, FaTrashAlt } from "react-icons/fa";
 
 const TodoItem = ({ list, remove }) => {
   return (
@@ -10,7 +10,6 @@ const TodoItem = ({ list, remove }) => {
               <li key={index}>
                 {entry}
                 <FaTrashAlt />
-                <FiEdit />
                 <FaTrash
                   className="deleteBtn"
                   onClick={() => {
