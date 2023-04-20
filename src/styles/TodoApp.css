@@ -10,39 +10,59 @@ body,
 #root {
   width: 80%;
   margin: 0 auto;
+  /* text-align: center; */
 }
 
-ul {
-  border: 1px solid rgb(3, 67, 67);
-  padding: 8px;
+h1 {
+  margin: 25px auto;
+  background-color: aqua;
+  padding: 0 5%;
+  width: fit-content;
   border-radius: 5px;
 }
 
+.inputWrapper {
+  text-align: center;
+}
+
+input {
+  width: 80%;
+  font-size: larger;
+  padding: 0 5px;
+}
+
+.addBtn {
+  font-size: larger;
+  padding: 0 5px;
+}
+
+ul {
+  width: 80%;
+  margin: 25px auto;
+}
+
 li {
-  list-style: none;
-  background-color: blueviolet;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  padding: 3px 8px;
   border: 1px solid black;
+  border-radius: 5px;
+  background-color: aquamarine;
+  font-size: large;
+}
+
+.delEdit {
   display: flex;
   align-items: center;
+  font-size: larger;
+  gap: 0 20px;
 }
 
-li:nth-child(odd) {
-  background-color: aqua;
-}
-
-li:first-child {
-  border-radius: 5px 5px 0 0;
-}
-
-li:last-child {
-  border-radius: 0 0 5px 5px;
-}
-
-input[type="checkbox"] {
-  width: auto;
-  margin: 0 10px;
-}
-
-#itemTitle {
-  width: 85%;
+.empty {
+  margin: 0 auto;
+  text-align: center;
+  background-color: red;
+  width: 50%;
+  border-radius: 5px;
 }

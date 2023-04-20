@@ -20,6 +20,7 @@ const TodoApp = () => {
     });
     setTodos(newTodos);
   };
+
   return (
     <div className="todoApp">
       <h1>React TODO App</h1>
